@@ -9,5 +9,6 @@ run: hw
 
 test: hw
 	./hw >result.txt
+	od -x result.txt
 	cmp result.txt reference.txt
   
